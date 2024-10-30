@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/Logo.svg";
 import FooterList from "./FooterList";
 import FooterListItem from "./FooterListItem";
 import NewsletterModal from "./FooterModale";
