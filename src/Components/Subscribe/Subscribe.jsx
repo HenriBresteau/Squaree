@@ -2,6 +2,7 @@ import { useState } from "react";
 import SubscribeCard from "./SubscribeCard";
 import SubscribeCardList from "./SubscribeCardList";
 import SubscribeCardListItem from "./SubscribeCardListItem";
+import { cn } from "@/lib/utils";
 
 const Subscribe = () => {
     const [isAnnual, setIsAnnual] = useState(false);
@@ -16,11 +17,12 @@ const Subscribe = () => {
         <div className="my-24 max-w-5xl mx-2 md:mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-3.5 justify-center">
                 <h2
-                    className={`text-center font-DMSans font-bold md:text-3xl text-primary transition-all duration-300  ${
+                    className={cn(
+                        "text-center font-DMSans font-bold text-primary transition-all duration-300",
                         !isAnnual
                             ? "text-2xl md:text-3xl md:leading-[3.25rem]"
                             : "text-secondary text-xl font-normal delay-100"
-                    }`}
+                    )}
                 >
                     Billed Monthly
                 </h2>
@@ -43,11 +45,12 @@ const Subscribe = () => {
                     </div>
                 </label>
                 <h2
-                    className={`text-center font-DMSans font-bold text-primary transition-all   duration-300  ${
+                    className={cn(
+                        "text-center font-DMSans font-bold text-primary transition-all duration-300",
                         isAnnual
                             ? "text-2xl md:text-3xl md:leading-[3.25rem]"
-                            : "text-secondary text-xl font-normal delay-100 "
-                    }`}
+                            : "text-secondary text-xl font-normal delay-100"
+                    )}
                 >
                     Billed Annually <span className="text-lg">(save 15%)</span>
                 </h2>
