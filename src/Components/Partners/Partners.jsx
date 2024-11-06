@@ -1,9 +1,9 @@
 import Partner from "../ui/partner";
 
 const partnersArray = [
-    { name: "Fluid Glu", img: "./partners1.png" },
-    { name: "Hikkeno", img: "./partners2.png" },
-    { name: "Bubble", img: "./partners3.png" },
+    { name: "Fluid Glu", img: "./partners1.svg" },
+    { name: "Hikkeno", img: "./partners2.svg" },
+    { name: "Bubble", img: "./partners3.svg" },
 ];
 const PartnerCard = ({ img }) => {
     return (
@@ -23,12 +23,14 @@ const Partners = () => {
                     We have the fast paced growing companies with us
                 </p>
             </div>
-            <div className="mt-9 flex flex-wrap items-center justify-center gap-4 md:justify-between ">
+            <div className="relative mt-9 flex flex-wrap items-center justify-center gap-4 md:justify-between ">
                 <Partner pauseOnHover className="[--duration:20s]">
                     {partnersArray.map((review) => (
                         <PartnerCard key={review.name} {...review} />
                     ))}
                 </Partner>
+                <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white"></div>
+                <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white"></div>
             </div>
         </div>
     );
