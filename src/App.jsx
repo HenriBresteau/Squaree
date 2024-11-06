@@ -10,7 +10,7 @@ import Users from "./Components/Users/Users";
 
 const App = () => {
     return (
-        <div>
+        <div className="overflow-hidden">
             <Navbar />
             <Hero />
             <Partners />
