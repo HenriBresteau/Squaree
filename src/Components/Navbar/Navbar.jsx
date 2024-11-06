@@ -1,6 +1,6 @@
-import NavbarItem from "./NavbarItem";
 import search from "../../assets/search.svg";
 import logo from "../../assets/Logo.svg";
+import Nav from "./Nav";
 
 const Navbar = () => {
     return (
@@ -12,10 +12,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="hidden md:flex gap-4 ">
-                <NavbarItem name="Features" arrow />
-                <NavbarItem name="Ressources" arrow />
-                <NavbarItem name="Company" arrow />
-                <NavbarItem name="Contact Sales" />
+                <Nav />
             </div>
             <img src={search} alt="Search" className="hidden md:flex" />
             <div className="ml-auto md:hidden">
