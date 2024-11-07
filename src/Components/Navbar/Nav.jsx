@@ -6,7 +6,7 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
     navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+} from "@/Components/ui/navigation-menu";
 import logo from "../../assets/Logo.svg";
 import { cn } from "@/lib/utils";
 import React from "react";
